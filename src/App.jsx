@@ -6,7 +6,7 @@ import '../src/style.css'  // Assuming this is your global styles
 // Styled components for the App component and IntroShape
 const Container = styled.div`
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
 `
 
 const IntroShape = styled.div`

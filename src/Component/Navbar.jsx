@@ -10,7 +10,6 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-//   height: 100%;
   padding: 10px 20px;
 `;
 

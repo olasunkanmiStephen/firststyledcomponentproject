@@ -1,81 +1,101 @@
-import React from 'react'
-import styled from 'styled-components'
-import ht from '../assets/ht.png'
-import AnimatedShapes from './AnimatedShapes'
+import React from 'react';
+import styled from 'styled-components';
+import introhand from '../assets/introhand.png';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
     height: calc(100vh - 50px);
-    display:flex;
+    display: flex;
     padding: 20px;
-`
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+`;
 
 const Left = styled.div`
     width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Corrected property name */
+    align-items: center;
     justify-content: center;
-`
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+`;
 
 const Title = styled.h1`
     width: 60%;
-    font-size: 60px; 
-`
+    font-size: 60px;
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 40px;
+    }
+`;
 
 const Desc = styled.p`
     width: 60%;
-    font-size: 20px; 
+    font-size: 20px;
     margin-top: 20px;
-`
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+`;
 
-const Info = styled.p`
+const Info = styled.div`
     width: 60%;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-`
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+    }
+`;
 
 const Button = styled.button`
     padding: 15px;
-    background-color: darkblue;  /* Corrected property name */
+    background-color: darkblue;
     color: white;
     font-weight: bold;
     border-radius: 10px;
     border: none;
     letter-spacing: 2px;
     cursor: pointer;
-`
+`;
 
 const Contact = styled.div`
     display: flex;
     flex-direction: column;
+    margin-top: 20px; /* Added margin to separate from button on smaller screens */
 `;
 
 const Phone = styled.span`
     color: #f0667d;
     font-weight: bold;
-`
+`;
 
 const ContactText = styled.span`
     color: gray;
     margin-top: 5px;
-`
+`;
 
 const Right = styled.div`
     width: 40%;
-    display:flex;
-    align-item: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    he
-
-    `
-
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+`;
 
 const Imageht = styled.img`
-    width:100%;
-`
-
+    width: 100%;
+    height: fit-content;
+`;
 
 const Intro = () => {
   return (
@@ -92,12 +112,11 @@ const Intro = () => {
             </Info>
         </Left>
         <Right>
-            {/* Changed to use Imageht component */}
-            <Imageht src={ht} alt="HT Logo"/>
+            <Imageht src={introhand} alt="HT Logo" />
         </Right>
-        <AnimatedShapes/>
+        <AnimatedShapes />
     </Container>
-  )
+  );
 }
 
-export default Intro
+export default Intro;
