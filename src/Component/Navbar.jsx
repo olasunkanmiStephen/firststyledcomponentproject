@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  background-color: white;
   height: 60px;
   justify-content: space-between;
   width: 100%; 
-  border-bottom: 1px ridge black;
+  box-shadow: 0 0 4px black;
 `;
 const Wrapper = styled.div`
   display: flex;
