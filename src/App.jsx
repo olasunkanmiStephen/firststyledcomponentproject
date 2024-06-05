@@ -2,6 +2,7 @@ import Intro from './Component/Intro'
 import Navbar from './Component/Navbar'
 import styled from 'styled-components'
 import '../src/style.css'  // Assuming this is your global styles
+import Features from './Component/Features'
 
 // Styled components for the App component and IntroShape
 const Container = styled.div`
@@ -22,11 +23,16 @@ const IntroShape = styled.div`
 
 const App = () => {
   return (
-    <Container>
-      <Navbar/>
-      <Intro/>
-      <IntroShape/>
-    </Container>
+    <>
+      <Container>
+        <Navbar/>
+        <Intro/>
+        <IntroShape/>
+      </Container>
+      <Container>
+        <Features/>
+      </Container>
+    </>
   )
 }
 
