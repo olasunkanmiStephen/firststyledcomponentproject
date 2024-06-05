@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  height: 50px;
-  padding: 0;
+  height: 60px;
   justify-content: space-between;
   width: 100%; 
   border-bottom: 1px ridge black;
@@ -11,12 +10,12 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  height: 100%;
+//   height: 100%;
+  padding: 10px 20px;
 `;
 
 const Left = styled.div`
   width: 60%;
-  padding: 10px 20px;  
   display: flex;
   justify-content: space-between;
 `;
@@ -42,6 +41,15 @@ const Menu = styled.ul`
 const MenuItem = styled.li`
     font-weight: bold;
 `
+const Button = styled.button`
+    border: 1px solid white;
+    background-color: crimson;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+`
 const Navbar = () => {
   return (
     <Container>
@@ -57,7 +65,7 @@ const Navbar = () => {
           </Menu>
         </Left>
         <Right>
-          <p>button</p>
+          <Button>Join Now</Button>
         </Right>
       </Wrapper>
     </Container>
