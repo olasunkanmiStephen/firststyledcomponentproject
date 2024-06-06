@@ -2,9 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import How from '../assets/introhand.png'
 import MiniCard from './MiniCard'
+import Play from '../assets/play.png'
 
 const Container = styled.div`
     display: flex;
+    align-item: center;
+    height: 100%;
+    justify-content: center;
+`
+
+const Desc = styled.p`
+    
 `
 
 const Left = styled.div`
@@ -15,12 +23,16 @@ const Left = styled.div`
 `
 const Image = styled.img`
     height: 100%;
-    width: 75%
-    margin-left: 100px;
+    width: 70%;
+    padding: 10px 0
 `
 
 const Right = styled.div`
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+    justify-content: center;
 `
 
 const Wrapper = styled.div`
@@ -40,8 +52,21 @@ const CardContainer = styled.div`
     margin-top: 50px;
 `
 
-const Desc = styled.p`
-    // font-size: 20px;
+const Button = styled.button`
+    // width: 100%;
+    border: none;
+    padding: 15px 20px;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+`
+
+const Icon =styled.img`
+    width: 20px;
+    margin-right: 10px;
 `
 
 const Service = () => {
@@ -63,6 +88,7 @@ const Service = () => {
                     <MiniCard/>
                     <MiniCard/>
                 </CardContainer>
+                <Button><Icon src={Play}/>How it works</Button>
             </Wrapper>
         </Right>
     </Container>

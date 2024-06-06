@@ -3,11 +3,14 @@ import styled from 'styled-components'
 import Search from '../assets/search.png'
 
 
-const Container = styled.p`
+const Container = styled.div`
     width: 100px;
-    padding: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    padding: 20px;
+    align-items: center
+    -webkit-box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
 `
 
 const Image = styled.img`
@@ -15,8 +18,11 @@ const Image = styled.img`
 `
 
 const Text = styled.span`
-
+    margin-top: 10px;
+    text-align: center;
 `
+
+
 
 const MiniCard = () => {
   return (

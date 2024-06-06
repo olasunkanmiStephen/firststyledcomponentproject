@@ -8,6 +8,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     position: relative
+    height: 100%;
     `
 
 const Left = styled.div`
@@ -24,6 +25,7 @@ const Right = styled.div`
 `
 
 const Image = styled.img`
+    // height: 100%;
     width: 70%;
 `
 
@@ -43,7 +45,7 @@ const Desc = styled.p`
     margin-top: 30px; 
 `
 const Button = styled.button`
-    width: 150px;
+    // width: 100%;
     border: none;
     padding: 15px 20px;
     background-color: darkblue;
