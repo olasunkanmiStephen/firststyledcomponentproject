@@ -60,13 +60,17 @@ const PriceShapes = styled.div`
   left: 0;
   opacity: 0.4;
   z-index: -1; 
+`;
+
+const MainContainer = styled.div`
+overflow-x: hidden;
 `
 
 const App = () => {
 
   const smallScreen = window.screen.width <= 480 ? true : false;
   return (
-    <>
+    <MainContainer>
       <Container>
         <Navbar/>
         <Intro/>
@@ -88,7 +92,7 @@ const App = () => {
           <Contact/>
           <Footer/>
       </Container>
-    </>
+    </MainContainer>
   )
 }
 

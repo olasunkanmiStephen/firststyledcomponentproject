@@ -31,7 +31,7 @@ const Right = styled.div`
 
     @media only screen and (max-width: 480px) {
         width: 90%;
-        margin-left: -10px;
+        // margin-left: -10px;
       }
 `
 

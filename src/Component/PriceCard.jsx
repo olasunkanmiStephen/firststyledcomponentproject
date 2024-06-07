@@ -16,6 +16,7 @@ const Container = styled.div`
         margin-bottom: 10px;
         padding: 10px;
         margin-right: 0;
+        width: 70%;
       }
 `;
 
