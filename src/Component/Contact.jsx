@@ -25,6 +25,23 @@ const Title = styled.h1`
 
 const AddressContainer = styled.div`
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+`
+
+const AddressItem = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+`
+
+const Icon = styled.img`
+     width: 20px;  
+     margin-right: 20px; 
+`
+const Text = styled.span`
+    font-size: 20px;
 `
 
 const Form = styled.form`
@@ -95,7 +112,20 @@ const Contact = () => {
                 </Form>
             </FormContainer>
             <AddressContainer>
-
+                <AddressItem>
+                    <Icon src={Map}/>
+                    <Text>123 Park Avenue St., New York, USA</Text>
+                </AddressItem>
+                <AddressItem>
+                    <Icon src={Phone}/>
+                    <Text>+1 631 1234 5678</Text>
+                    <Text>+1 631 1234 5678</Text>
+                </AddressItem>
+                <AddressItem>
+                    <Icon src={Send}/>
+                    <Text>contact@lama.dev</Text>
+                    <Text>sales@tife.dev</Text>
+                </AddressItem>
             </AddressContainer>
         </Wrapper>
     </Container>
