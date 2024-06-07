@@ -6,11 +6,11 @@ const Container = styled.div`
     -webkit-box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
     box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
     border-radius: 10px;
+    width: 23%;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    height: 100%;
 
     @media only screen and (max-width: 480px) {
         margin-bottom: 10px;
@@ -42,8 +42,8 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-    margin: 30px 0;
-    font-size: 16px;
+    margin: 10px 0;
+    font-size:20px;
 
     @media only screen and (max-width: 480px) {
         margin: 5px 0;
