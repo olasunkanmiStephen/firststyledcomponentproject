@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const IntroShape = styled.div`
   clip-path: polygon(100% 0%, 70% 0%, 57% 100%, 100% 100%);
-  background-color: crimson;
+  background-color: pink;
   position: absolute;
   width: 100%;
   height: 100vh;
