@@ -87,7 +87,6 @@ const App = () => {
       <Container>
           <Contact/>
           <Footer/>
-          {/* <PriceShapes/>  */}
       </Container>
     </>
   )

@@ -6,7 +6,12 @@ const Container = styled.div`
   color: lightgray;
   background-color: #111;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 0;position: 
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 
 const Wrapper = styled.div`
@@ -26,6 +31,10 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   padding: 0 20px;
+  @media only screen and (max-width: 480px) {
+    font-size: 10px;
+    padding: 0 7px;
+  }
 `;
 
 const Copyright = styled.span`
