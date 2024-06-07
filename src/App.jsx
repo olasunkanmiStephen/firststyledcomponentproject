@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import '../src/style.css'  // Assuming this is your global styles
 import Features from './Component/Features'
 import Service from './Component/Service'
+import Pricing from './Component/Pricing'
+import Contact from './Component/Contact'
+import Footer from './Component/Footer'
 
 // Styled components for the App component and IntroShape
 const Container = styled.div`
@@ -47,6 +50,18 @@ const ServiceShapes = styled.div`
   z-index: -1; 
 `
 
+const PriceShapes = styled.div`
+  clip-path: polygon(40% 0, 100% 0%, 100% 100%, 67% 100%);
+  background-color: crimson;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: -1; 
+`
+
 const App = () => {
   return (
     <>
@@ -62,6 +77,15 @@ const App = () => {
       <Container>
           <Service/>
           <ServiceShapes/>
+      </Container>
+      <Container>
+          <Pricing/>
+          <PriceShapes/>
+      </Container>
+      <Container>
+          <Contact/>
+          <Footer/>
+          {/* <PriceShapes/>  */}
       </Container>
     </>
   )
