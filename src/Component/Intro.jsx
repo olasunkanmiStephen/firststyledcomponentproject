@@ -6,10 +6,11 @@ import AnimatedShapes from './AnimatedShapes';
 const Container = styled.div`
     height: calc(100vh - 50px);
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    @media (max-width: 768px) {
-        flex-direction: column-reverse;
-        height: auto;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
     }
 `;
 
@@ -17,19 +18,19 @@ const Left = styled.div`
     width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @media (max-width: 768px) {
-        width: 100%;
+    
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+        // padding: 0 20px
     }
 `;
 
 const Title = styled.h1`
     width: 60%;
     font-size: 60px;
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 480px) {
         width: 100%;
-        font-size: 40px;
+        font-size: 50px; 
     }
 `;
 
@@ -48,10 +49,10 @@ const Info = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 768px) {
-        width: 100%;
+    @media only screen and (max-width: 480px){
         flex-direction: column;
-    }
+        width: 100%;
+      }
 `;
 
 const Button = styled.button`
@@ -63,6 +64,10 @@ const Button = styled.button`
     border: none;
     letter-spacing: 2px;
     cursor: pointer;
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 20px;
+    }
 `;
 
 const Contact = styled.div`
@@ -86,10 +91,9 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 768px) {
-        width: 100%;
-        margin-top: 20px;
-    }
+    @media only screen and (max-width: 480px){
+        display: none;
+      }
 `;
 
 const Imageht = styled.img`

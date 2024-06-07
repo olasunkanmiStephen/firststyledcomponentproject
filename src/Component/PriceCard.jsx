@@ -10,6 +10,13 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: #fff;
+    height: 100%;
+
+    @media only screen and (max-width: 480px) {
+        margin-bottom: 10px;
+        padding: 10px;
+        margin-right: 0;
+      }
 `;
 
 const PriceContainer = styled.div`
@@ -17,23 +24,40 @@ const PriceContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+
+    @media only screen and (max-width: 480px) {
+        margin: 5px 0;
+      }
 `;
 
 const List = styled.ul`
     list-style: none;
     padding: 0;
     margin: 20px 0;
+
+    @media only screen and (max-width: 480px) {
+        margin: 0;
+      }
 `;
 
 const ListItem = styled.li`
-    margin: 10px 0;
+    margin: 30px 0;
     font-size: 16px;
+
+    @media only screen and (max-width: 480px) {
+        margin: 5px 0;
+        font-size: 15px;
+      }
 `;
 
 const Price = styled.span`
     font-size: 36px;
     font-weight: bold;
     color: #333;
+
+    @media only screen and (max-width: 480px) {
+        font-size: 30px;
+      }
 `;
 
 const Type = styled.button`
@@ -45,6 +69,10 @@ const Type = styled.button`
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+
+    @media only screen and (max-width: 480px) {
+        display: none;
+      }
 `;
 
 const Button = styled.button`
@@ -60,6 +88,11 @@ const Button = styled.button`
     &:hover {
         background-color: #00008b;
     }
+
+    @media only screen and (max-width: 480px) {
+        padding: 5px;
+        font-size: 12px;
+      }
 `;
 
 const PriceCard = ({price, type}) => {

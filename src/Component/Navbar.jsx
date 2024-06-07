@@ -2,54 +2,67 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  display: flex;
   background-color: white;
   height: 60px;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%; 
   box-shadow: 0 0 4px black;
 `;
+
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
+  width: 100%;
+  max-width: 1200px;
 `;
 
 const Left = styled.div`
-  width: 60%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 `;
 
 const Right = styled.div`
-  width: 40%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 `;
 
 const Logo = styled.h1`
-    text-decoration: underline crimson;
-    font-weight: bold;
-`
+  text-decoration: underline crimson;
+  font-weight: bold;
+  margin-right: 50px;
+`;
+
 const Menu = styled.ul`
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 30px
-`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
+`;
+
 const MenuItem = styled.li`
-    font-weight: bold;
-`
+  font-weight: bold;
+`;
+
 const Button = styled.button`
-    border: 1px solid white;
-    background-color: crimson;
-    padding: 10px 15px;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-`
+  border: 1px solid white;
+  background-color: crimson;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+`;
+
 const Navbar = () => {
   return (
     <Container>

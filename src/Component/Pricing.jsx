@@ -7,6 +7,10 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     height: 100%;
+
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+    }
 `
 
 const Pricing = () => {
