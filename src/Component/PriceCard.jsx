@@ -47,7 +47,8 @@ const ListItem = styled.li`
 
     @media only screen and (max-width: 480px) {
         margin: 5px 0;
-        font-size: 15px;
+        font-size: 20px;
+        text-align: center;
       }
 `;
 
@@ -77,22 +78,22 @@ const Type = styled.button`
 `;
 
 const Button = styled.button`
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     background-color: darkblue;
     color: white;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 15px;
 
     &:hover {
         background-color: #00008b;
     }
 
     @media only screen and (max-width: 480px) {
-        padding: 5px;
-        font-size: 12px;
+        padding: 8px;
+        font-size: 15px;
       }
 `;
 

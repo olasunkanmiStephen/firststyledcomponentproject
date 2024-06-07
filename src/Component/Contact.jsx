@@ -53,7 +53,6 @@ const AddressContainer = styled.div`
 
   @media only screen and (max-width: 480px) {
     width: 100%;
-    background-color: red;
   }
 `;
 
